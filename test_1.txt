@@ -1,1 +1,13 @@
-hello is ly
+<?php
+$hostname = "localhost";
+$username = "ptudw_14";
+$password = "@toilaai@ly2111";
+
+$conn = new mysqli($hostname,$username,$password);
+
+if ($conn->connect_error){
+    echo 'Ket noi that bai!'. $conn->connect_error;
+} else{
+    echo 'Ket noi thanh cong!';
+}
+?>
